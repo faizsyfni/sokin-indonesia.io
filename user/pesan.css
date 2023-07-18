@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 0;
+    background-color: #f7f7f7
+}
+.navbar  ul  {
+    gap: 75px;
+    margin-right: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+header {
+    padding: 10px;
+}
+
+
+ #ice img {
+    object-fit: cover;
+    width: 650px;
+    margin-top: -70px;
+    margin-left: 15px;
+    
+}
+
+.rigt-column {
+     margin-top: 120px; 
+     display: flex;
+     gap: 50px;
+     
+     
+     
+}
+
+ .sokin {
+    margin-top: 13px;
+}
+
+.content-ya {
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+    width: 230px;
+    height: 250px;
+    gap: 25px;
+    
+}
+
+.promo {
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: rgb(187, 187, 187);
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: none;
+}
+
+#menumakanminum {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 80px;
+}
+.row {
+    gap : 30px;
+}
+
+.animate__animated.animate__fadeInUpBig {
+    --animate-duration: 1.5s;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+form .nama {
+    display: flex;
+    gap: 22px;
+
+}
+
+form input {
+    outline: none;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    height: 65px;
+    width: 552px;
+}
+
+form #textarea {
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    resize: none;
+    padding: 12px;
+    height: 200px;
+    width: 552px;
+
+}
+
+form .nama .namadepanbelakang {
+    width: 265px;
+}
+
+
+.content-footer {
+    background-color: rgba(182, 182, 182, 0.61);
+    height:555px;
+    margin-top: 65px;
+    padding-left: 70px;
+    padding-top: 30px;
+
+}
+
+.content-footer {
+    background-color: rgba(182, 182, 182, 0.61);
+    height: 555px;
+    margin-top: 65px;
+    padding-left: 70px;
+    padding-top: 30px;
+    min-height: 0;
+}
+@media screen and (max-width:767px) {
+    .text-center {
+        text-align: center;
+    }
+}

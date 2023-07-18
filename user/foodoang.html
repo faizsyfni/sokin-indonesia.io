@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan</title>
+    <link rel="stylesheet" href="pesan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 0;
+            background-color: #f7f7f7;
+            overflow-x: hidden;
+
+        }
+
+        .row {
+            transition-duration: 8s;
+        }
+
+        .navbar ul {
+            gap: 75px;
+            margin-right: 70px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 10px;
+
+        }
+
+        header {
+            padding: 10px;
+        }
+
+
+        #ice img {
+            object-fit: cover;
+            width: 600px;
+            margin-top: -100px;
+            margin-left: 55px;
+
+        }
+
+        .rigt-column {
+            margin-top: 120px;
+            display: flex;
+            gap: 50px;
+
+
+
+        }
+
+        .sokin {
+            margin-top: 13px;
+        }
+
+        .content-ya {
+            background-color: rgb(206, 206, 206);
+            border-radius: 10px;
+            width: 230px;
+            height: 250px;
+            gap: 25px;
+
+        }
+
+        .promo {
+            text-decoration: line-through;
+            text-decoration-style: solid;
+            text-decoration-color: rgb(187, 187, 187);
+            text-decoration-thickness: 2px;
+            text-decoration-skip-ink: none;
+        }
+
+        #menumakanminum {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            padding: 80px;
+        }
+
+        .row {
+            gap: 30px;
+        }
+
+        .animate__animated.animate__fadeInUpBig {
+            --animate-duration: 1.5s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 15px;
+        }
+
+        form .nama {
+            display: flex;
+            gap: 22px;
+
+        }
+
+        form input {
+            outline: none;
+            padding: 12px;
+            border-radius: 15px;
+            border: none;
+            height: 65px;
+            width: 552px;
+        }
+
+        form #textarea {
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            resize: none;
+            padding: 12px;
+            height: 200px;
+            width: 552px;
+
+        }
+
+        form .nama .namadepanbelakang {
+            width: 265px;
+        }
+
+
+        .content-footer {
+            background-color: rgba(182, 182, 182, 0.61);
+            height: 555px;
+            margin-top: 65px;
+            padding-left: 70px;
+            padding-top: 30px;
+
+        }
+
+        .content-footer {
+            background-color: rgba(182, 182, 182, 0.61);
+            height: 555px;
+            margin-top: 65px;
+            padding-left: 70px;
+            padding-top: 30px;
+            min-height: 0;
+        }
+
+        body {
+            background-color: #f7f7f7;
+        }
+
+        header #nav .container-fluid .navbar-nav .nav-item #button {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        #mie {
+            width: 460px;
+            object-fit: cover
+        }
+
+        #mie2 {
+            width: 270px;
+            margin-top: 15px;
+        }
+
+        #mam {
+            width: 200px;
+            object-fit: cover;
+        }
+
+        #mam2 {
+            width: 190px;
+            object-fit: cover;
+        }
+
+        #mam3 {
+            width: 190px;
+            object-fit: cover;
+        }
+
+        #mam4 {
+            width: 190px;
+        }
+
+        #mam5 {
+            width: 180px;
+        }
+
+        #mam6 {
+            width: 180px;
+        }
+
+        #mam7 {
+            width: 190px;
+        }
+
+        #moca {
+            width: 750px;
+            margin-top: -409px;
+        }
+
+        #hubungi {
+            width: 200px;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            object-fit: cover;
+        }
+
+        /* Membuat animasi dengan nama fadeIn */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+        @media screen and (max-width:767px) {
+            .text-center {
+                text-align: center;
+            }
+            #user2 {
+                width: 150px;
+                margin-right: -80px;
+            }
+
+            #navbarNav {
+                margin-top: 20px;
+                
+            }
+
+            body {
+                font-size: 14px;
+                overflow-x: hidden;
+            }
+
+
+            header #nav .container-fluid ul {
+                margin-top: 70px;
+                width: 100%;
+                flex-direction: column;
+
+            }
+
+
+
+            nav .hidden {
+                display: none;
+            }
+
+            header #nav .container-fluid .navbar-nav .nav-item #button {
+                margin-right: -110px;
+            }
+
+            .rigt-column #ice img {
+                width: 250px;
+                margin-left: 25px;
+            }
+
+            .rigt-column {
+                flex-direction: column;
+            }
+
+            .promo2 .sokin #mie {
+                width: 230px;
+
+            }
+
+            .promo2 {
+                margin-left: 50px;
+            }
+
+            .promo2 #mie2 {
+                width: 160px;
+            }
+
+            img {
+                width: 100px;
+
+            }
+
+            #mam {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam2 {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam3 {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam4 {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam5 {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam6 {
+                width: 100%;
+                height: auto;
+            }
+
+            #mam7 {
+                width: 100%;
+                height: auto;
+            }
+
+            #moca {
+                width: 365px;
+                margin-top: 50px;
+                margin-left: -50px;
+
+            }
+
+
+
+            form .nama {
+                display: flex;
+                gap: 22px;
+                flex-direction: column;
+
+            }
+
+            form input {
+
+                height: 65px;
+                width: 266px;
+            }
+
+            form #textarea {
+
+                padding: 12px;
+                height: 200px;
+                width: 266px;
+
+            }
+
+            form .nama .namadepanbelakang {
+                width: 265px;
+            }
+
+
+
+            .content-footer {
+
+                height: 865px;
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                padding-top: 30px;
+
+            }
+
+            #hubungi {
+                width: 180px;
+                margin-top: 20px;
+                padding-bottom: 20px;
+                object-fit: cover;
+                margin-left: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header data-bs-theme="light">
+        <nav id="nav" class="navbar navbar-expand-md navbar-light bg-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="SOKIN.png" alt="sokin"
+                        style="width: 70px; object-fit: cover; margin-left: 20px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" style="color: rgb(0, 0, 0);">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html" style="color: rgb(0, 0, 0);">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pesan.html" style="color: rgb(0, 0, 0);"><b>Order</b></a>
+                        </li>
+                        <li class="nav-item-keranjang">
+                            <a class="nav-link active" href="checkout.html" style="color: rgb(0, 0, 0);">Checkout</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown" id="user2">
+                                <button class="btn btn-close-white dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img src="profilecircle.png" style="width: 45px; object-fit: contain;" alt="">
+                                </button>
+
+                                <div id="user3" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a style="font-size: 14px;" class="dropdown-item" href="Login.html">View Account</a>
+                                    <a style="font-size: 14px;" class="dropdown-item" href="FAQ.html"> FAQ</a>
+                                    <a style="font-size: 14px; color: white;" class="dropdown-item bg-dark"
+                                        href="../index.html">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="rigt-column">
+        <div id="ice">
+            <img class="animate__animated animate__fadeInUp" src="burger.png" alt="strawberry-vanilla">
+        </div>
+
+        <div class="promo2 animate__animated animate__fadeInUp">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="sokin">
+                <img id="mie" src="font/food - SOKIN.png" alt="sokin">
+            </div>
+            <img id="mie2" src="burger-font.png" alt="strawberry-vanilla"><br><br>
+            <p class="promo" style="color: rgba(129, 129, 129, 0.644);">Rp 33.000</p>
+            <p style="font-size: 30px;">Rp 28.000</p>
+
+            <button style=" font-size: 11px;
+            width: 145px;
+            padding: 8px;" onclick="tambahBarang('Sok.in food Burger', 28.000)" id="button2" type="button"
+            class="btn btn-dark">Add Cart</button>
+        </div>
+    </div><br><br>
+
+    <div id="menumakanminum" class="container">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="row animated-element">
+
+           
+
+            <div class="content-ya col d-flex flex-column" style="padding: 11px;">
+                <div class="text-center">
+                    <a href="foodPizza.html"><img src="imgproduk/PIZZA.png" alt="strawberi" style="height: 150px;"></a>
+                </div>
+                <div class="text-center p-1" style="background-color: white; border-radius: 10px;">
+                    <a href="foodPizza.html"><img src="pizza-font.png" alt="ice-cream"
+                            style="width: 143px; object-fit: cover;"></a>
+                </div>
+            </div>
+
+            <div class="content-ya col d-flex flex-column">
+                <div class="text-center">
+                    <a href="kentangGoreng.html"><img src="imgproduk/KENTANG GORENG.png" alt="strawberi"
+                            style="height: 150px; margin-top: 10px"></a>
+                </div>
+                <div class="text-center p-1" style="background-color: white; border-radius: 10px;">
+                    <a href="kentangGoreng.html"><img id="mam5" src="french-fries.png" alt="ice-cream"></a>
+                </div>
+            </div>
+
+
+            <div class="content-ya col d-flex flex-column">
+                <div class="text-center">
+                    <a href="noddleMie.html"><img src="imgproduk/MIE.png" alt="strawberi"
+                            style="height: 150px; margin-top: 13px;"></a>
+                </div>
+                <div class="text-center p-1" style="background-color: white; border-radius: 10px;">
+                    <a href="noddleMie.html"><img src="mie-font.png" alt="ice-cream" style="width: 97px;"></a>
+                </div>
+            </div>
+
+            
+                        <div class="content-ya col d-flex flex-column">
+                            <div class="text-center">
+                                <a href="sandwich.html"><img src="imgproduk/SANDWICH.png" alt="strawberi"
+                                        style="height: 150px; margin-top: 13px;"></a>
+                            </div>
+                            <div class="text-center p-1" style="background-color: white; border-radius: 10px; ">
+                                <a href="sandwich.html"><img src="sandwich.png" alt="ice-cream" style="width: 110px;"></a>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
+
+    <div class="content-footer">
+        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="hubungi" src="contact.png" alt="hubungi"
+            class="appear">
+
+        <form data-aos="fade-up" class="animated-element" action="">
+
+            <div class="nama">
+                <input class="namadepanbelakang" type="text" id="nameD" name="nameD" placeholder="First Name">
+                <input class="namadepanbelakang" type="text" id="nameB" name="nameB" placeholder="Last Name">
+            </div>
+
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+
+            <a href="#"><button onclick="kirim()" type="button" class="btn btn-dark"
+                    style="border: none; border-radius: 5px; width: 150px; height: 30px; text-align: center;padding: 10px; line-height: 10px;">Send</button></a>
+        </form>
+
+        <div style="float: right;" class="animated-element">
+            <img data-aos="fade-left" data-aos-anchor-placement="top-bottom" id="moca" src="tippo.png" alt="ice">
+        </div>
+    </div>
+    <script src="navscript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="keranjangProduk.js"></script>
+
+    <script>
+        function kirim(){
+            alert("Your Message Sent")
+        }
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdownButton = document.getElementById("dropdownMenuButton");
+            var dropdownMenu = document.getElementById("user3");
+
+            dropdownButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+
+                if (dropdownMenu.style.display === "block") {
+                    dropdownMenu.style.display = "none";
+                } else {
+                    dropdownMenu.style.display = "block";
+                }
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!dropdownButton.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

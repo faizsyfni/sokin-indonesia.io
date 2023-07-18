@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    
+   
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 0;
+      background-color: #f7f7f7;
+      overflow-x: hidden;
+      display: grid;
+      justify-content: center;
+
+
+    }
+
+
+    .row {
+      transition-duration: 8s;
+    }
+
+    .navbar ul {
+      gap: 75px;
+      margin-right: 70px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 10px;
+
+    }
+
+    header {
+      padding: 10px;
+    }
+
+    #moca {
+      margin-top: -398px;
+    }
+
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 15px;
+    }
+
+    #form .nama {
+      display: flex;
+      gap: 22px;
+
+    }
+
+    #form input {
+      outline: none;
+      padding: 12px;
+      border-radius: 15px;
+      border: none;
+      height: 65px;
+      width: 552px;
+    }
+
+    #form #textarea {
+      outline: none;
+      border-radius: 15px;
+      border: none;
+      resize: none;
+      padding: 12px;
+      height: 200px;
+      width: 552px;
+
+    }
+
+    #form .nama .namadepanbelakang {
+      width: 265px;
+    }
+
+
+    .content-footer {
+      background-color: rgba(182, 182, 182, 0.61);
+      height: 555px;
+      margin-top: 65px;
+      padding-left: 70px;
+      padding-top: 30px;
+
+    }
+
+    .container {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-left: 70px;
+      margin-top: 130px;
+    }
+
+    .content-footer {
+      background-color: rgba(182, 182, 182, 0.61);
+      height: 555px;
+      margin-top: 65px;
+      padding-left: 70px;
+      padding-top: 30px;
+      min-height: 0;
+
+    }
+
+    #hubungi {
+      width: 250px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .text-center {
+      margin-top: 80px;
+    }
+
+    #cek {
+      padding: 60px;
+      border: 2px solid black;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-radius: 10px;
+
+
+
+    }
+
+    #pindah {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #rt1 {
+      width: 50%;
+    }
+
+    #rt2 {
+      width: 50%;
+    }
+
+    #rt3 {
+      width: 50%;
+    }
+
+    #rt4 {
+      width: 50%;
+    }
+
+   
+
+
+
+
+
+    @media (max-width: 768px) {
+      .utama {
+        font-size: 12px;
+      }
+
+      #cek {
+        flex-direction: column;
+        width: 80%;
+        padding: 20px;
+      }
+
+      #validasi {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tippo {
+        flex-direction: column-reverse;
+        width: auto;
+
+      }
+
+      #rt1 {
+        width: 100%;
+      }
+
+      #rt2 {
+        width: 100%;
+      }
+
+      #rt3 {
+        width: 100%;
+      }
+
+      #rt4 {
+        width: 100%;
+      }
+
+      .form-control {
+        width: 150%;
+        font-size: 12px;
+      }
+
+      form {
+        padding: 5px;
+      }
+
+      .input-group {
+        width: 150%;
+      }
+
+      .redeem {
+        width: 100%;
+      }
+
+      .bayar {
+        width: 150%;
+      }
+
+      .button {
+
+        font-size: 13px;
+      }
+
+      .keranjang {
+        font-size: 16px;
+      }
+
+      #form .nama {
+        display: flex;
+        gap: 22px;
+        flex-direction: column;
+
+      }
+
+      #form input {
+
+        height: 65px;
+        width: 266px;
+      }
+
+      #form #textarea {
+
+        padding: 12px;
+        height: 200px;
+        width: 266px;
+
+      }
+
+      #form .nama .namadepanbelakang {
+        width: 265px;
+      }
+
+
+
+      .content-footer {
+
+        height: 885px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 30px;
+
+      }
+
+      #hubungi {
+        width: 190px;
+        margin-top: 50px;
+        padding-bottom: 20px;
+        object-fit: cover;
+        margin-left: 45px;
+      }
+
+
+      #moca {
+        margin-top: 20px;
+        width: 350px;
+      }
+ #navbarNav  {
+                margin-right: -55px;
+                margin-top: 40px;
+            }
+
+            #user2{
+                width: 150px;
+                margin-right: -80px;
+            }
+
+        
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <header data-bs-theme="light">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="SOKIN.png" alt="sokin"
+            style="width: 70px; object-fit: cover; margin-left: 20px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" style="color: rgb(0, 0, 0);">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" style="color: rgb(0, 0, 0);">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pesan.html" style="color: rgb(0, 0, 0);">Order</a>
+            </li>
+            <li class="nav-item-keranjang">
+              <a class="nav-link active" href="checkout.html" style="color: rgb(0, 0, 0);"><b>Checkout</b></a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown" id="user2">
+                <button  class="btn btn-close-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="profilecircle.png" style="width: 45px; object-fit: contain;" alt="">
+                </button>
+                <i class='bx bx-user-circle'></i>
+                <div id="user3" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a style="font-size: 14px;" class="dropdown-item" href="Login.html">View Account</a>
+                  <a  style="font-size: 14px;"  class="dropdown-item" href="FAQ.html"> FAQ</a>
+                  <a  style="font-size: 14px; color: white;"  class="dropdown-item bg-dark" href="../index.html">Logout</a>
+                </div>
+              </div>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <div class="text-center">
+    <img src="pay.png" alt="checkout" style="width: 200px; margin-top: 50px;">
+  </div><br><br><br>
+
+
+  <div id="pindah">
+
+    <div id="cek">
+      <form  id="validasi" class=" form row g-3 needs-validation w-75" novalidate>
+
+        <div class="col-md-4 w-100">
+          <label for="validationServerUsername" class="form-label fw-bold ">Full name</label>
+          <div class="input-group has-validation">
+            <input type="text" class=" email form-control" id="validationServerEmail"
+              aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" required>
+            <div class="invalid-feedback">
+              Your Name Has Not Been Filled In
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 w-100">
+          <label for="validationServerUsername" class="form-label fw-bold ">Email</label>
+          <div class="input-group has-validation">
+            <input placeholder="contoh @emailku.com" type="email" class=" email form-control" id="validationServerEmail"
+              aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" required>
+            <div class="invalid-feedback">
+              Email Not Filled
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 w-100">
+          <label for="validationServerUsername" class="form-label fw-bold ">Phone number</label>
+          <div class="input-group has-validation">
+            <input type="text" class=" email form-control" id="validationServerEmail"
+              aria-describedby="inputGroupPrepend3 validationServerEmailFeedback" required>
+            <div class="invalid-feedback">
+              Phone number Not Filled
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 w-100">
+          <label for="validationServer03" class="form-label fw-bold ">Address(Details)</label>
+          <input placeholder="contoh : Jl.Dieng Km 9, Perumahan Griya Lestari A3" type="text" class="form-control"
+            id="validationServer03" required>
+          <div class="invalid-feedback">
+            Address(Details) Not Filled
+          </div>
+        </div>
+        <div id="rt1" class="col-md-6">
+          <label for="validationServer03" class="form-label fw-bold ">RT/RW</label>
+          <input placeholder="contoh : Contoh: 04/06" type="text" class="form-control" id="validationServer03" required>
+          <div class="invalid-feedback">
+            RT/RW Not Filled
+          </div>
+        </div>
+        <div id="rt2" class="col-md-6 ">
+          <label for="validationServer03" class="form-label fw-bold ">Postal code</label>
+          <input type="text" class="form-control" id="validationServer03" required>
+          <div class="invalid-feedback">
+            Postal code Not Filled
+          </div>
+        </div>
+
+        <div id="rt3" class="col-md-4 ">
+          <label for="validationServer01" class=" nama1 form-label fw-bold">Regency/City</label>
+          <input type="text" class="form-control" id="validationServer01" required>
+          <div class="invalid-feedback">
+            Regency/City Not Filled
+          </div>
+        </div>
+        <div id="rt4" class="col-md-4 ">
+          <label for="validationServer01" class=" nama1 form-label fw-bold">Province</label>
+          <input type="text" class="form-control" id="validationServer01" required>
+          <div class="invalid-feedback">
+            province not yet filled
+          </div>
+        </div>
+
+        <div class="col-md-4 w-100">
+          <label for="validationServer01" class=" nama1 form-label fw-bold">Name (according to the account number)</label>
+          <input type="text" class="form-control" id="validationServer01" required>
+          <p style="font-size: 12px;">Enter the full name that appears on your account</p>
+          <div class="invalid-feedback">
+            Full name must match
+          </div>
+        </div>
+        <div class="col-md-4 w-100">
+          <label for="validationServer02" class="form-label fw-bold">Account number</label>
+          <input type="text" class="form-control" id="validationServer02" required>
+          <div class="invalid-feedback">
+            Account number is required
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck4" required>
+            <label class="form-check-label" for="invalidCheck4">
+              Save This Information for Later
+            </label>
+          </div>
+        </div>
+
+
+        
+        <div class="col-12 bayar">
+          <button  class="bayar submit btn btn-dark w-100" type="submit">Payment Process</button>
+        </div>
+       
+        
+      
+      </form>
+
+
+      <div id="tabel" style="margin-top: 30px;">
+        <table id="tabelku" style="background-color: rgb(13, 13, 13); border-radius: 10px; color: white;">
+
+          <tbody>
+
+            <tr >
+              <th scope="row" id="keranjang" style="padding: 10px;"  >
+             
+              <th>
+              </tr>
+           
+
+              
+            </tbody>
+          </table><br>
+          
+          <p style="background-color: black; color: white; border-radius: 5px; padding: 7px; font-size: 13px; width: 140px;">Total price: <span id="total-harga"></span></p>
+        <button class="btn btn-dark" onclick="hapusSemua()">Cancel Shopping</button>
+      </div>
+
+  </div>
+    </div><br><br><br>
+
+    <div class="content-footer">
+      <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="hubungi" src="contact.png" alt="hubungi"
+        class="appear">
+
+      <form id="form" data-aos="fade-up" class="animated-element" action="">
+
+        <div class="nama">
+          <input class="namadepanbelakang" type="text" id="nameD" name="nameD" placeholder="First Name">
+          <input class="namadepanbelakang" type="text" id="nameB" name="nameB" placeholder="Last Name">
+        </div>
+
+        <input type="email" id="email" name="email" placeholder="Email">
+
+        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
+        
+
+        <a href="#"> <button onclick="krirm()" type="button" class="btn btn-dark"  style="border: none; border-radius: 5px; width: 150px; height: 30px; text-align: center;padding: 10px; line-height: 10px;">Send</button></a>
+      </form>
+
+      <div style="float: right;" class="animated-element">
+        <img data-aos="fade-left" data-aos-anchor-placement="top-bottom" id="moca" src="tippo.png" alt="ice">
+      </div>
+    </div>
+
+
+
+
+    <script src="checkoutValidasi.js"> </script>
+    <script src="checkouttotalharga.js"></script>
+    <script>
+      function krirm() {
+        alert("pesan anda telah terkirim")
+      }
+    </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var dropdownButton = document.getElementById("dropdownMenuButton");
+          var dropdownMenu = document.getElementById("user3");
+      
+          dropdownButton.addEventListener("click", function(event) {
+            event.stopPropagation();
+      
+            if (dropdownMenu.style.display === "block") {
+              dropdownMenu.style.display = "none";
+            } else {
+              dropdownMenu.style.display = "block";
+            }
+          });
+      
+          document.addEventListener("click", function(event) {
+            if (!dropdownButton.contains(event.target)) {
+              dropdownMenu.style.display = "none";
+            }
+          });
+        });
+      </script>
+        <script>
+          function redirectToAnotherPage() {
+            window.location.href = "file:///D:/PPW/final%20project/FP/user/bayar.html"; 
+          }
+        </script>
+        
+</body>
+
+</html>

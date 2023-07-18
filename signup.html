@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <p>Sok.in</p>
+                </div>
+            </nav>
+            <form action="login.html" >
+                <div class="form-box">
+                    <div class="login-container" id="login">
+                        <div class="top">
+                            <header>Register</header>
+                        </div>
+                        <div class="two-form">
+                            <div class="div input-box">
+                                <input type="text" class="input-field" placeholder="Nama">
+                                <i class="bx bx-user"></i>
+                            </div>
+                            <div class="div input-box">
+                                <input type="text" class="input-field" placeholder="Username">
+                                <i class="bx bx-user"></i>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Email">
+                            <i class="bx bx-user"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password">
+                            <i class="bx bx-lock-alt"></i>
+                        </div>
+
+                        <div class="input-box">
+                           
+                            <button type="submit" onclick="pesan()"  class="submit">Submit</button>
+                          
+                        </div><br>
+                        <div class="top">
+                            <span>Already have an account ? <a href="login.html">Login</a></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script> 
+        function pesan(){
+            alert("akun anda berhasil dibuat, silahkan login.")
+        }
+        </script>
+    
+
+</body>
+</html>
