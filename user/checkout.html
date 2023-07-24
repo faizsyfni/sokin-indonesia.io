@@ -378,12 +378,12 @@
           form.classList.add('was-validated');
         }
 
-        function redirectToAnotherPage() {
-          window.location.href = "bayar.html";
-        }
+        // function redirectToAnotherPage() {
+        //   window.location.href = "bayar.html";
+        // }
       </script>
       
-      <form method="POST" id="validasi" class="form row g-3 needs-validation w-75" onsubmit="validateForm(event)" novalidate>
+      <form action="bayar.html" method="POST" id="validasi" class="form row g-3 needs-validation w-75" onsubmit="validateForm(event)" novalidate>
 
         <div class="col-md-4 w-100">
           <label for="validationServerUsername" class="form-label fw-bold ">Full name</label>
