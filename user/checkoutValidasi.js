@@ -22,7 +22,7 @@
                     input.nextElementSibling.style.display = 'block';
                 } else {
                     input.classList.remove('is-invalid');
-                    window.location.href = "file:///D:/PPW/final%20project/FP/user/bayar.html";
+                    window.location.href = "bayar.html";
                     input.nextElementSibling.style.display = 'none';
                 }
             });
