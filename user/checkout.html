@@ -366,7 +366,24 @@
   <div id="pindah">
 
     <div id="cek">
-      <form action="bayar.html" method="POST" id="validasi" class=" form row g-3 needs-validation w-75" novalidate>
+      <script>
+        function validateForm(event) {
+          event.preventDefault();
+          var form = event.target;
+          if (form.checkValidity() === false) {
+            event.stopPropagation();
+          } else {
+            redirectToAnotherPage();
+          }
+          form.classList.add('was-validated');
+        }
+
+        function redirectToAnotherPage() {
+          window.location.href = "bayar.html";
+        }
+      </script>
+      
+      <form action="bayar.html" method="POST" id="validasi" class="form row g-3 needs-validation w-75" onsubmit="validateForm(event)" novalidate>
 
         <div class="col-md-4 w-100">
           <label for="validationServerUsername" class="form-label fw-bold ">Full name</label>
@@ -530,7 +547,7 @@
         alert("pesan anda telah terkirim")
       }
     </script>
-      <script>
+<!--       <script>
         document.addEventListener("DOMContentLoaded", function() {
           var dropdownButton = document.getElementById("dropdownMenuButton");
           var dropdownMenu = document.getElementById("user3");
@@ -556,7 +573,7 @@
           function redirectToAnotherPage() {
             window.location.href = "bayar.html"; 
           }
-        </script>
+        </script> -->
         
 </body>
 
