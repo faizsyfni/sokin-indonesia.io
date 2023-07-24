@@ -450,7 +450,7 @@
 
 
         <div class="col-12 bayar">
-          <button class="bayar submit btn btn-dark w-100" type="submit">Payment Process</button>
+          <button onClick="bayar()" class="bayar submit btn btn-dark w-100" type="submit">Payment Process</button>
         </div>
       </form>
 
@@ -512,6 +512,12 @@
         alert("Your Message Sent")
       }
     </script>
+
+  <script>
+    function bayar(){
+      window.location.href = "bayar.html"
+    }
+  </script>
 </body>
 
 </html>
